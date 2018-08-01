@@ -1,21 +1,25 @@
 
-  class Questions
+    		@@action= 0 
+            @@romance= 0 
+            @@horror= 0 
+            @@family= 0 
+            @@comedy= 0 
  #To quiz the user on what mood they are in and giving them a movie type to watch 
  
  
  #To display the result that has the most questions matched with it
 
-def scoring 
+def scoring(answer)
 # everytime someone chooses a certain letter than 1 will be added on to their behind the senses score  
-if    answer == a
+if    answer == "a"
       @@action += 1
-elsif answer == b
+elsif answer == "b"
       @@romance += 1 
-elsif answer == c
+elsif answer == "c"
       @@horror += 1
-elsif answer == d
+elsif answer == "d"
       @@family += 1
-elsif answer == e 
+elsif answer == "e" 
       @@comedy += 1
 else 
   return "nothing" 
@@ -38,14 +42,5 @@ def result_selector
             return "nothing"
   end
 end
-#stating that all types are starting at 0 
-def self.start_quiz
-    		@@action= 0 
-            @@romance= 0 
-            @@horror= 0 
-            @@Family= 0 
-            @@comedy= 0 
-    		@@mood_movie.each do |movie|
-      			self.quiz_movie(movie)
- end 
+#stating that all types are starting at 0  
     		
