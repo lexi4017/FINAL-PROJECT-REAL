@@ -10,8 +10,9 @@ class ApplicationController < Sinatra::Base
   end
   
   post '/' do
-    @my_results = Questions(params[:question1, :question2, :question3, :question4, :question5, :question6, :question7, :question8])
+    scoring(params[:question1])
       
+    
       erb :results
   end
   
