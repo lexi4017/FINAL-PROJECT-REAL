@@ -5,7 +5,18 @@ class ApplicationController < Sinatra::Base
   	set :public_dir, "public"
   end
 
-  get "/" do
+  get '/' do
   	erb :index
   end
+  
+  post '/' do
+    @my_results = Questions(params[:question1])
+      
+      erb :results
+  end
+  
+   get "/results" do
+  	erb :results
+  end
+  
 end
