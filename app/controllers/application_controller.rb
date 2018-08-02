@@ -8,7 +8,7 @@ class ApplicationController < Sinatra::Base
   get '/' do
   	erb :index
   end
-  
+
   post '/' do
     scoring(params[:question1])
     scoring(params[:question2])
@@ -19,14 +19,9 @@ class ApplicationController < Sinatra::Base
     scoring(params[:question7])
     scoring(params[:question8])
     scoring(params[:question9])
-    @@the_real_result = request
-      
-    
-      erb :results
+    @the_real_result = result_selector
+    erb :results
   end
-  
-  # get "/results" do
-  # 	erb :results
-  # end
-  
+
 end
+

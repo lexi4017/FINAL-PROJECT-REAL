@@ -1,137 +1,293 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Movie Mood</title>
-    <h2>Welcome to Movie Mood</h2>
-  </head>
+<head>
+<title>Movie Mood</title>
+<link rel = "stylesheet"
+type = "text/css"
+href = "stylesheets/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Limelight|Oleo+Script|Yanone+Kaffeesatz" rel="stylesheet">
+<h1>Welcome to Movie Mood</h1>
+</head>
 <body>
-  <form method=POST>
-  <div> <!--First question-->
-    <h3>How do you currently feel?</h3>
-    <p></p>
-        <input type="checkbox" name="question1" value="a">Wired
-    <p></p>
-        <input type="checkbox" name="question1" value="b">In your bag
-    <p></p>
-        <input type="checkbox" name="question1" value="c">Brave
-    <p></p>
-        <input type="checkbox" name="question1" value="d">Humorous
-    <p></p>
-        <input type="checkbox" name="question1" value="e">Childish
-  </div>
-    <!--Second Question-->
-    <div2>
-       <h3>What's your favorite candy??</h3>
-    <p></p>
-        <input type="checkbox" name="question2" value="a">Licorice
-    <p></p>
-        <input type="checkbox" name="question2" value="b">Kit Kat
-    <p></p>
-        <input type="checkbox" name="question2" value="c">Reese Cup
-    <p></p>
-        <input type="checkbox" name="question2" value="d">Sour Patch Kids
-    <p></p>
-        <input type="checkbox" name="question2" value="e">Swedish Fish
-  </div2>
-  <!--Third Question-->
-   <div3>
-       <h3>What animal do you like?</h3>
-    <p></p>
-        <input type="checkbox" name="question3" value="a">Panther
-    <p></p>
-        <input type="checkbox" name="question3" value="b">Owl
-    <p></p>
-        <input type="checkbox" name="question3" value="c">Dinosaur
-    <p></p>
-        <input type="checkbox" name="question3" value="d">Monkey
-    <p></p>
-        <input type="checkbox" name="question3" value="e">Hyena
-    </div3>
-    <!--Fourth Question-->
-    <div4>
-       <h3>Where's your ideal destination?</h3>
-    <p></p>
-        <input type="checkbox" name="question4" value="a">New York
-    <p></p>
-        <input type="checkbox" name="question4" value="b">Paris
-    <p></p>
-        <input type="checkbox" name="question4" value="c">The Woods
-    <p></p>
-        <input type="checkbox" name="question4" value="d">Circus
-    <p></p>
-        <input type="checkbox" name="question4" value="e">Stay at Home
-    </div4>
-    <!--Fifth Question-->
-    <div5>
-       <h3>What's your favorite sport to play?</h3>
-    <p></p>
-        <input type="checkbox" name="question5" value="a">Hockey
-    <p></p>
-        <input type="checkbox" name="question5" value="b">Baseball
-    <p></p>
-        <input type="checkbox" name="question5" value="c">Football
-    <p></p>
-        <input type="checkbox" name="question5" value="d">Polo
-    <p></p>
-        <input type="checkbox" name="question5" value="e">Golf
-    </div5>
-    <!--Sixth Question-->
-    <div6>
-       <h3>What's your favorite color?</h3>
-    <p></p>
-    <input type="checkbox" name="question6" value="a">Purple
-    <p></p>
-    <input type="checkbox" name="question6" value="b">Red
-    <p></p>
-    <input type="checkbox" name="question6" value="c">Black
-    <p></p>
-    <input type="checkbox" name="question6" value="d">Green
-    <p></p>
-    <input type="checkbox" name="question6" value="e">Orange
-    </div6>
-    <div7>
-       <h3>What's your dream car?</h3>
-    <p></p>
-    <input type="checkbox" name="question7" value="a">Lamborghini
-    <p></p>
-    <input type="checkbox" name="question7" value="b">BMW
-    <p></p>
-    <input type="checkbox" name="question7" value="c">Monster Truck
-    <p></p>
-    <input type="checkbox" name="question7" value="d">Beetle
-    <p></p>
-    <input type="checkbox" name="question7" value="e">Mini-Van
-    </div7>
-    <!--Eighth Question-->
-    <div8>
-       <h3>What type of shoes do you like to wear?</h3>
-    <p></p>
-    <input type="checkbox" name="question8" value="a">Boots
-    <p></p>
-    <input type="checkbox" name="question8" value="b">High Heels
-    <p></p>
-    <input type="checkbox" name="question8" value="c">Loafers
-    <p></p>
-    <input type="checkbox" name="question8" value="d">Jazz Shoes
-    <p>s</p>
-    <input type="checkbox" name="question8" value="e">Sneakers
-    </div8>
-    <div9>
-       <h3>What Type of Music do You Like?</h3>
-    <p></p>
-    <input type="checkbox" name="question8" value="a">Rock & Roll
-    <p></p>
-    <input type="checkbox" name="question8" value="b">Jazz
-    <p></p>
-    <input type="checkbox" name="question8" value="c">Hard Core Punk
-    <p></p>
-    <input type="checkbox" name="question8" value="d">Asian Underground
-    <p>s</p>
-    <input type="checkbox" name="question8" value="e">Pop
-    </div9>
-    <p></p>
-    <input type="submit" value="Click To See Results!">
-    </form>
-   
-  </body>
+<form method=POST>
+<div> <!--First question-->
+<h3>How do you currently feel?</h3>
+<p></p>
+<img src= "http://cdn.playbuzz.com/cdn/52255f87-8d7c-4ced-b414-4efb9da50776/d7b877a5-bd9d-4a75-bdff-78d7ec865af7.jpg" width=200 >
+<p></p>
+<label class = "container">
+<input type="radio" name="question1" value="a" checked="checked">Wired
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question1" value="b">In your bag
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question1" value="c">Brave
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question1" value="d">Humorous
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question1" value="e">Childish
+<span class = "checkmark"></span>
+</label>
+</div>
+<!--Second Question-->
+<div>
+<h3>What's your favorite candy??</h3>
+<p></p>
+<img src="https://images.fineartamerica.com/images-medium-large-5/1-boxes-of-candy-jeff-lowe.jpg" width=200>
+<p></p>
+<label class = "container">
+<input type="radio" name="question2" value="a" checked = checked>Licorice
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question2" value="b">Kit Kat
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question2" value="c">Reese Cup
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question2" value="d">Sour Patch Kids
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question2" value="e">Swedish Fish
+<span class = "checkmark"></span>
+</label>
+</div>
+<!--Third Question-->
+<div>
+<h3>What animal do you like?</h3>
+<p></p>
+<img src="https://comps.canstockphoto.com/animals-collage-picture_csp19466474.jpg" height=200 width=200>
+<p></p>
+<label class = "container">
+<input type="radio" name="question3" value="a" checked = checked >Panther
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question3" value="b">Owl
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question3" value="c">Dinosaur
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question3" value="d">Monkey
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question3" value="e">Hyena
+<span class = "checkmark"></span>
+</label>
+</div>
+<!--Fourth Question-->
+<div>
+<h3>Where's your ideal destination?</h3>
+<p></p>
+<img src="http://nishsays.com/wp-content/uploads/2017/01/Honeymoon-Destinations1.jpg" width=200 height=200>
+<p></p>
+<label class = "container">
+<input type="radio" name="question4" value="a" checked = "checked">New York
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question4" value="b">Paris
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question4" value="c">The Woods
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question4" value="d">Circus
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question4" value="e">Stay at Home
+<span class = "checkmark"></span>
+</label>
+</div>
+<!--Fifth Question-->
+<div>
+<h3>What's your favorite sport to watch?</h3>
+<p></p>
+<img src="http://runsickcattle.com/data/out/183/1107235.jpg"width=200>
+<p></p>
+<label class = "container">
+<input type="radio" name="question5" value="a" checked = "checked">Hockey
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question5" value="b">Baseball
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question5" value="c">Football
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question5" value="d">Polo
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question5" value="e">Golf
+<span class = "checkmark"></span>
+</label>
+</div>
+<!--Sixth Question-->
+<div>
+<h3>What's your favorite color?</h3>
+<p></p>
+<img src="https://images.fineartamerica.com/images-medium-large/collage-color-study-sketch-michelle-calkins.jpg" width=200 height=200>
+<p></p>
+<label class = "container">
+<input type="radio" name="question6" value="a" checked = "checked">Purple
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question6" value="b">Red
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question6" value="c">Black
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question6" value="d">Green
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question6" value="e">Orange
+<span class = "checkmark"></span>
+</label>
+</div>
+<div>
+<h3>What's your dream car?</h3>
+<p></p>
+<img src="https://www.zeroto60times.com/wp-content/uploads/2014/05/fast-fastest-quick-quickest-cars-stats-0-60-zero-to-60-times.jpg" width=200 height=200>
+<p></p>
+<label class = "container">
+<input type="radio" name="question7" value="a" checked = "checked">Lamborghini
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question7" value="b">BMW
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question7" value="c">Monster Truck
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question7" value="d">Beetle
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question7" value="e">Mini-Van
+<span class = "checkmark"></span>
+</label>
+</div>
+<!--Eighth Question-->
+<div>
+<h3>What type of shoes do you like to wear?</h3>
+<p></p>
+<img src="https://cdn.unifiedcommerce.com/content/product/large/4895145412612.jpg" width=250>
+<p></p>
+<label class = "container">
+<input type="radio" name="question8" value="a" checked = "checked">Boots
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question8" value="b">High Heels
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question8" value="c">Loafers
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question8" value="d">Jazz Shoes
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question8" value="e">Sneakers
+<span class = "checkmark"></span>
+</label>
+</div>
+<div>
+<h3>What Type of Music do You Like?</h3>
+<p></p>
+<img src="https://image.slidesharecdn.com/musicmagazinecollagemoodboard-140107054807-phpapp02/95/music-magazine-collage-moodboard-1-638.jpg?cb=1389073725" width=200>
+<p></p>
+<label class = "container">
+<input type="radio" name="question9" value="a" checked = "checked">Rock & Roll
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question9" value="b">Jazz
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question9" value="c">Hard Core Punk
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question9" value="d">Asian Underground
+<span class = "checkmark"></span>
+</label>
+<p></p>
+<label class = "container">
+<input type="radio" name="question9" value="e">Pop
+<span class = "checkmark"></span>
+</label>
+</div>
+<p></p>
+<input type="submit" class = "button" value="Click To See Results!">
+
+</body>
 </html>
