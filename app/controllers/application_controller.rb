@@ -10,6 +10,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/' do
+    reset_results
     scoring(params[:question1])
     scoring(params[:question2])
     scoring(params[:question3])

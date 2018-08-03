@@ -1,9 +1,10 @@
-
+def reset_results
     		@@action= 0
             @@romance= 0 
             @@horror= 0 
             @@family= 0 
-            @@comedy= 0 
+            @@comedy= 0
+end
  #To quiz the user on what mood they are in and giving them a movie type to watch 
  
  
