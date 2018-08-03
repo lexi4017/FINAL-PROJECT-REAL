@@ -116,3 +116,9 @@ a{
     text-transform: uppercase;
     font-family: 'Oleo Script', cursive;
 }
+.name {
+    color: #398FB2;
+    font-size:20px;
+    text-align: left;
+    font-family:'Yanone Kaffeesatz', sans-serif;
+}

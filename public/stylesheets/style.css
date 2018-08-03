@@ -126,7 +126,12 @@ div{
 /*    transfom: translateY(4px);*/
 /*}*/
 
-
+.name {
+    color: #398FB2;
+    font-size:20px;
+    text-align: left;
+    font-family:'Yanone Kaffeesatz', sans-serif;
+}
 
 .button {
     background-color: #DDA276; /* Green */
